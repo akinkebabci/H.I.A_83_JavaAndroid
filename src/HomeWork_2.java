@@ -29,8 +29,8 @@ public class HomeWork_2 {
         int country = 1;
         for (int i = 1; country < num; i++) {
 
-            for (int j = 1; j <= i ; j++) {
-                System.out.print(country++ +" ");
+            for (int j = 1; j <= i; j++) {
+                System.out.print(country++ + " ");
 
             }
             System.out.println();

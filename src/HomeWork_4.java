@@ -7,15 +7,14 @@ public class HomeWork_4 {
         Eğer asal ise bir şey yazdırmamıza gerek yoktur. (Burada break kullanmanızı bekliyorum)
 */
 
-        int num = 5 ;
+        int num = 9;
 
-        for (int i = 2; i < num ; i++) {
-            if (num % i != 0){
-                break;
-            }else {
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
                 System.out.println("sayı asal değil...");
-
+                break;
             }
+
         }
     }
 }

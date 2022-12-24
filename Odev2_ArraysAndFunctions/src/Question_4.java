@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class Question_4 {
     public static void main(String[] args) {

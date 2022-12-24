@@ -1,4 +1,4 @@
-public class HomeWork_2 {
+public class Question_2 {
     public static void main(String[] args) {
 /*
         ikizkenar üçgen çizdireceğiz.(Daha önce yıldızlarla yaptığımıza benzer bir şekilde).

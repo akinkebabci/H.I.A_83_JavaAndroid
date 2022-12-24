@@ -1,4 +1,4 @@
-public class HomeWork_3 {
+public class Question_3 {
     public static void main(String[] args) {
         /*Üçüncü kısımda elimizde iki tane integer değişkenimiz olacak ve bunların değeri 3 basamaklı
         herhangi bir sayı olacaktır. Sizden beklediğim bu sayıların aynı basamağında aynı rakam varsa
@@ -9,8 +9,8 @@ public class HomeWork_3 {
         olmadığı için mesajı yazmayacaktır.
         */
 
-        int num1 = 489;
-        int num2 = 375;
+        int num1 = 198;
+        int num2 = 875;
         int result = 0;
         int result2 = 0;
 

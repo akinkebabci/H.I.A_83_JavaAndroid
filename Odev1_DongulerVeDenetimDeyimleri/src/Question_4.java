@@ -1,4 +1,4 @@
-public class HomeWork_4 {
+public class Question_4 {
     public static void main(String[] args) {
 /*
         - Son kısmında elimizde bir integer sayı olacak arkadaşlar.

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HomeWork.iml" filepath="$PROJECT_DIR$/HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Odev1_DongulerVeDenetimDeyimleri/Odev1_DongulerVeDenetimDeyimleri.iml" filepath="$PROJECT_DIR$/Odev1_DongulerVeDenetimDeyimleri/Odev1_DongulerVeDenetimDeyimleri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Odev2_ArraysAndFunctions/Odev2_ArraysAndFunctions.iml" filepath="$PROJECT_DIR$/Odev2_ArraysAndFunctions/Odev2_ArraysAndFunctions.iml" />
     </modules>
   </component>
 </project>

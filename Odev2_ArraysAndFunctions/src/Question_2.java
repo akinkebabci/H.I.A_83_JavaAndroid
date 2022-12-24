@@ -1,21 +1,27 @@
+import java.util.Arrays;
+
 public class Question_2 {
     public static void main(String[] args) {
-        int[] myArr = {8, 5, 7, 12, 11};
+        int[] myArr = {8, 5, 7, 12, 15,78,54};
 
         int[] newArray = scrollRigthIndex(myArr);
 
-        for (int i = 0; i < newArray.length; i++) {
-            System.out.println(newArray[i]);
-        }
+        System.out.println(Arrays.toString(newArray));
 
 
     }
 
     static int[] scrollRigthIndex(int[] arr) {
-        int[] newArray = arr;
-        int firstIndex = newArray[0];
-        newArray[0] = newArray[newArray.length - 1];
-        newArray[newArray.length - 1] = firstIndex;
+
+        int[] newArray = new int[arr.length];
+
+        for (int i = 0; i < arr.length ; i++) {
+            for (int j = 0; j < i ; j++) {
+                newArray[i] = arr[j];
+                newArray[0] = arr[arr.length-1];
+            }
+        }
+
         return newArray;
 
 

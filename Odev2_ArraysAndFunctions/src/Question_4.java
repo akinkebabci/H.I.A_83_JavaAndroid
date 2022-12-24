@@ -3,8 +3,9 @@ import java.util.Arrays;
 
 public class Question_4 {
     public static void main(String[] args) {
-        int[] myArr = {6, 7, 9, 10,11};
+        int[] myArr = {6, 8, 9,10,11};
         int[] result = findUnderCountNumber(myArr);
+        System.out.println(Arrays.toString(result));
 
     }
 
@@ -17,7 +18,7 @@ public class Question_4 {
             if (arr[i] == foundNum) {
                 newArr[i] = arr[i];
 
-                indexNum = i + 1;
+                indexNum = i +1;
                 foundNum = arr[i];
                 foundNum++;
             }

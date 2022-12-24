@@ -3,7 +3,6 @@ public class Question_4 {
     public static void main(String[] args) {
         int[] myArr = {6, 8, 9,10,11};
         int[] result = findUnderCountNumber(myArr);
-        System.out.println(Arrays.toString(result));
 
     }
 

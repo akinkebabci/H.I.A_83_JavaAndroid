@@ -1,13 +1,9 @@
-import java.util.Arrays;
 
 public class Question_2 {
     public static void main(String[] args) {
         int[] myArr = {8, 5, 7, 12, 15,78,54};
 
         int[] newArray = scrollRigthIndex(myArr);
-
-        System.out.println(Arrays.toString(newArray));
-
 
     }
 

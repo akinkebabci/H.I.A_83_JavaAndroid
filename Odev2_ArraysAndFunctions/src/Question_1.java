@@ -1,6 +1,6 @@
 public class Question_1 {
     public static void main(String[] args) {
-        int[] myArr = {4, 7, 8, 10, 11};
+        int[] myArr = {6, 7, 8, 9,11 };
         int result = findUnderCountNumber(myArr);
         System.out.println(result);
     }

@@ -3,9 +3,12 @@ public class Rectangle {
     private int longEdge;
 
     public Rectangle(int shortEdge, int longEdge) {
-        if (shortEdge < 0 || longEdge < 0) {
-            shortEdge = 0;
-            longEdge = 0;
+        if (shortEdge < 0) {
+            shortEdge = 1;
+
+        }
+        if (longEdge < 0){
+            longEdge = 1 ;
         }
         this.shortEdge = shortEdge;
         this.longEdge = longEdge;
@@ -19,12 +22,12 @@ public class Rectangle {
         return longEdge;
     }
 
-    public static int calculateArea(int fistEdge, int secondEdge) {
-        return fistEdge * secondEdge;
+    public int calculateArea() {
+        return this.shortEdge * this.longEdge;
     }
 
-    public static int calculateEnvironment(int firstEdge, int secondEdge) {
-        return (2 * firstEdge) + (2 * secondEdge);
+    public int calculateEnvironment() {
+        return (2 * this.shortEdge) + (2 * this.longEdge);
     }
 
     public void draw(){
@@ -45,8 +48,8 @@ public class Rectangle {
         System.out.println("Şeklimiz : " +"Dikdörtgendir");
         System.out.println("Şeklimizin Özellikleri ve Bunların Değerleri");
         System.out.println("Kısa Kenarı : " + this.shortEdge + " , Uzun Kenarı : " + this.longEdge);
-        System.out.println("Şeklimizin Alanı : " + calculateArea(this.shortEdge,this.longEdge));
-        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment(this.shortEdge,this.longEdge));
+        System.out.println("Şeklimizin Alanı : " + calculateArea());
+        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment());
         System.out.println("Şeklimizin GÖrüntüsü : ");
         draw();
     }

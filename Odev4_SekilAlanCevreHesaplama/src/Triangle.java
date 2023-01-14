@@ -3,9 +3,12 @@ public class Triangle {
     private int secondSteepEdge;
 
     public Triangle(int firstSteepEdge, int secondSteepEdge) {
-        if (firstSteepEdge < 0 || secondSteepEdge < 0) {
-            firstSteepEdge = 0;
-            secondSteepEdge = 0;
+        if (firstSteepEdge < 0) {
+            firstSteepEdge = 1;
+
+        }
+        if (secondSteepEdge < 0){
+            secondSteepEdge = 1 ;
         }
         this.firstSteepEdge = firstSteepEdge;
         this.secondSteepEdge = secondSteepEdge;
@@ -19,20 +22,20 @@ public class Triangle {
         return secondSteepEdge;
     }
 
-    public static int calculateArea(int x, int y) {
-        return (x * y) / 2;
+    public int calculateArea() {
+        return (this.firstSteepEdge * this.secondSteepEdge) / 2;
     }
 
-    public static int calculateEnvironment(int x, int y) {
-        return x + y + Math.abs((x * 2) + (y * 2));
+    public double calculateEnvironment() {
+        return (this.firstSteepEdge + this.secondSteepEdge) + Math.sqrt((this.firstSteepEdge*this.firstSteepEdge) + (this.secondSteepEdge * this.secondSteepEdge));
     }
 
     public void showInfo() {
         System.out.println("Şeklimiz : " + "Dik Üçgendir");
         System.out.println("Şeklimizin Özellikleri ve Bunların Değerleri");
         System.out.println("Birinci Dik Kenarı : " + this.firstSteepEdge + " , İkinci Dik Kenarı : " + this.secondSteepEdge);
-        System.out.println("Şeklimizin Alanı : " + calculateArea(this.firstSteepEdge, this.secondSteepEdge));
-        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment(this.firstSteepEdge, this.secondSteepEdge));
+        System.out.println("Şeklimizin Alanı : " + calculateArea());
+        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment());
 
     }
 }

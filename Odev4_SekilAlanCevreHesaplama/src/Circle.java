@@ -4,7 +4,7 @@ public class Circle {
 
     public Circle(double radius) {
         if (radius < 0) {
-            radius = 0;
+            radius = 1;
         }
         this.radius = radius;
     }
@@ -13,11 +13,11 @@ public class Circle {
         return radius;
     }
 
-    public static double calculateArea(double radius) {
+    public double calculateArea() {
         return pi * (radius * radius);
     }
 
-    public static double calculateEnvironment(double radius) {
+    public double calculateEnvironment() {
         return 2 * pi * radius;
     }
 
@@ -25,8 +25,8 @@ public class Circle {
         System.out.println("Şeklimiz : " + "Çemberdir");
         System.out.println("Şeklimizin Özellikleri ve Bunların Değerleri");
         System.out.println("Yarı Çapı : " + this.radius);
-        System.out.println("Şeklimizin Alanı : " + calculateArea(this.radius));
-        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment(this.radius));
+        System.out.println("Şeklimizin Alanı : " + calculateArea());
+        System.out.println("Şeklimizin Çevresi : " + calculateEnvironment());
 
     }
 }

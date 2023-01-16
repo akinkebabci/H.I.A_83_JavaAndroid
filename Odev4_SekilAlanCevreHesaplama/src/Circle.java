@@ -1,5 +1,5 @@
 public class Circle {
-    private final static double pi = 3.14f;
+    public final static double PI = Math.PI;
     private double radius;
 
     public Circle(double radius) {
@@ -14,11 +14,11 @@ public class Circle {
     }
 
     public double calculateArea() {
-        return pi * (radius * radius);
+        return PI * (radius * radius);
     }
 
     public double calculateEnvironment() {
-        return 2 * pi * radius;
+        return 2 * PI * radius;
     }
 
     public void showInfo() {

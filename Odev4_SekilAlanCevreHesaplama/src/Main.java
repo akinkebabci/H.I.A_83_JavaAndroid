@@ -49,19 +49,16 @@ public class Main {
                 circle.showInfo();
 
             } else if (secim.equals("4")) {
-
-                for (int i = 0; i < rectangles.length; i++) {
-                    if (rectangles[i] != null) {
+                for (int i = 0; i < sayac; i++) {
                         rectangles[i].showInfo();
                     }
-                }
                 System.out.println("**********Hoşçakalın**********");
                 break;
-            } else {
-                System.out.println("Geçersiz Seçim Yaptınız..!");
+                }
+
+                System.out.println("*******************************************");
             }
-            System.out.println("*******************************************");
-        }
+
 
     }
 
